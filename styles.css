@@ -1,0 +1,270 @@
+body{
+    padding-top: 60px;
+    font-family:'Times New Roman', Times, serif;
+    background: rgb(107,107,107);
+}
+/* :target {
+    padding-top: 60px;
+} */
+
+/*Subrayado animado*/
+a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: rgb(238, 182, 15);
+    transform: scale(0,1);
+    transform-origin: center left;
+    transition: transform .25s;
+
+
+}
+a:hover::after {
+    transform: scale(1,1);
+
+}
+
+.max-width{
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+
+}
+
+h1, h2, h3, h4, p {
+    padding: 2px;
+    color: white;
+}
+
+.a-color {
+    color: white;
+}
+.p-f{
+    color:rgb(192, 191, 191) ;
+}
+.nav-link {
+    /* color: rgb(4,44,124);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px; */
+    text-transform: uppercase;
+}
+/* .nav-link:hover{
+    color: black;
+} */
+.h3, h3{
+    font-size: 34px;
+}
+p ,h2 {
+    font-size: 22px;
+}
+.h4-somos {
+    font-style: oblique;
+}
+
+.botton {
+    color: rgb(4,44,124);
+    font-size: 22px;
+    padding: 10px;
+    border-color: rgb(4,44,124);
+    border-radius: 8px;
+    background-color: transparent;
+}
+.botton:hover {
+    background-color:rgba(4, 44, 124, 0.452) ;
+    color: white;
+   
+}
+
+.p-color{
+    color: rgb(4,44,124);
+}
+.Font-h3 {
+    font-size: 52px;
+}
+.Font-p {
+    font-size: 32px;
+}
+.form-check-label{
+    font-size: 10px;
+    color: white;
+}
+.border-1 {
+    border-radius: 2px solid rgb(4,44,124) ;
+    padding: 10px;
+}
+.btn {
+    background:rgb(217,164,4) ;
+}
+.btn:hover{
+    background: rgb(238, 182, 15);
+}
+.text-banner{
+    font-size: 22px;
+    color: rgb(77, 77, 77);
+    font-weight: 600;
+}
+.slogan {
+    font-size: 40px;
+    color:rgb(4,44,124) ;
+}
+
+.bg{
+    background: rgb(217,164,4);
+}
+.bg-1, .bg-2 {
+    background: rgb(107,107,107)
+}
+
+.bg-3, .bg-4 {
+    
+    background: rgb(4,44,124);
+}
+
+.bg-5 {
+    background: rgb(4,36,100);
+}
+/* Fondo banner*/
+.fondo {
+    background-image: url(/img/ofi.jpg);
+    height: 100vh;
+    opacity: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+   
+}
+
+/* Formulario*/
+.container-form{
+    display: flex;
+    flex-direction: column;
+
+}
+.form-check{
+padding-left: 40px;
+}
+.check-label{
+    font-size: 10px;
+    color: white;
+}
+textarea {
+    border: 1px solid #ddd;
+    
+    border-radius: 0.2rem;
+    outline: none;
+}
+.container-form label {
+    padding:6px 0 6px 0;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    order: -1;
+}
+
+.container-form input {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 0.2rem;
+    padding: 0.25rem;
+    outline: none;
+}
+textarea {
+    width: 300px;
+}
+
+
+fieldset {
+    padding: 10px;
+}
+
+/*Footer*/
+.h3-footer {
+    text-align: center;
+    
+}
+.sub-footer {
+    height: 50px;
+    
+}
+.p-footer{
+    padding-top:10px ;
+    text-align: center;
+}
+
+
+/*Responsive*/
+@media  screen and (max-width:845px) {
+    .btn-whatsApp {
+        display: none;
+    }
+    .bg-2 {
+        background:rgb(217,164,4) ;
+    }
+    .bg-1 {    background:  rgb(4,44,124);
+    }
+
+    .seccion-responsive {
+        width: 100%;
+
+    }
+    .img-seccion-1 {
+        width: auto;
+    }
+    .mensaje {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        bottom: 0px;
+
+    }
+    .container-form {
+        padding-left: 150px;
+    }
+   .container-form input {
+       width: 400px;
+       align-items: center;
+       justify-content: center;
+       
+   }
+   .form-check {
+       padding-left: 180px;
+       position: relative;
+       
+    }
+    .form-check-label {
+       width: 100%;
+       
+    
+   }
+   textarea{
+       width: 400px;
+    
+   }
+   .botton {
+       padding-top: 10px;
+       padding-left: 100px;
+       position: relative;
+       left: 50px;
+   }
+   
+}
+
+@media screen and (max-width:640px) {
+    .container-form input {
+        width: 300px;
+    }
+    p{
+        font-size: 18px;
+    }
+    textarea {
+        width: 300px;
+    }
+    
+}
+
+@media screen and (max-width:940px) {
+    .quienes-somos{
+        width: 100%;
+        text-align: center;
+    }
+}
